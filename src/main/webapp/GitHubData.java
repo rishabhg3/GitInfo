@@ -15,17 +15,21 @@ import javax.ws.rs.core.Response;
 import org.kohsuke.github.*;
 
 /* Request mapping for main class*/
+
 @Path("/users")
 public class GitHubData {
- 
+
 	/* Accept post request and accepts Specific type of media and generates a 
 	 * html page
 	 * data is mapped to variable in the function*/
+
+	
 	@POST
 	@Path("/repoinfo")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces("text/html")
 	public Response getGitData(String data) {
+
 		/* contains the output html */
 		String output=null ;
 		
@@ -81,6 +85,5 @@ public class GitHubData {
 		}
 		return Response.status(200).entity(output).build();
 		 		
-	} 
-	
+	}	
 }

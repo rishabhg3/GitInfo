@@ -5,3 +5,7 @@ An index page is getting info from user and passing it to rest service where it 
 
 This can be improved by adding more details or more information can be extracted to give better info about the repository.
 
+Instructions on how to fetch data:
+
+If repository link is "https://github.com/rishabhg3/Project" ,input only "rishabhg3/Project"
+
